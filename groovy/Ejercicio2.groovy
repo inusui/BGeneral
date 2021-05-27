@@ -28,7 +28,8 @@ class Ejercicio2 {
         try {
             sqlSample.eachRow ( "call sp_prueba_groovy (?)", [i_estudiante] )
             {itc ->
-                    println itc.t_entrada + "~ID: " + itc.id +"\nDescripcion--> " + itc.descripcion 
+                    println itc.t_entrada + "~ID: " + itc.id +"\nDescripcion--> " + itc.descripcion  //Se agrego la descripcion
+                    /*Insertando a la cuenta. */
                     insertAccount(sqlSample,i_estudiante,itc.id)
             }
        }catch (SQLException sqlex){
