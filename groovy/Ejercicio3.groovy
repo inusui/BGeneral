@@ -21,7 +21,7 @@ class Ejercicio3 {
         println "Estudiante:" + i_estudiante
 
         def Sql sqlSample = Sql.newInstance(BGUTPConexion.getDataSource('dbSample'))
-        calculaInteres(sqlSample, i_estudiante)
+        calculaInteres(sqlSample, i_estudiante) ///Se cambia este llamado por el de CalculaInteres, esa es la diferencia con el ejercicio #2
     }
 
 
